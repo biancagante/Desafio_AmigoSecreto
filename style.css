@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orelega+One&display=swap');
+
+:root {
+    --cor-background: #F7F7F8;
+    --cor-fonte-escura: #1E1E24;
+    --cor-fonte-clara: #F7EBE8;
+    --cor-primaria: #E54B4B;
+    --cor-secundaria: #FFA987;
+    --cor-terciaria: #3F0D12;
+    --cor-placeholder: #444140;
+    --fonte-titulos: 'Orelega One';
+    --fonte-corpo: 'Hanken Grotesk';
+    --fonte-placeholder: 'Inter';
+}
+
+body {
+    background-color: var(--cor-background);
+    margin: 0;
+    /* padding: 0 3vw; */
+}
+
+header, main {
+    padding: 3vw 6vw;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1vw;
+}
+
+#img_logo_Oracle {
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav a {
+    color: var(--cor-fonte-escura);
+    font-family: var(--fonte-corpo);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.linha__divisoria {
+    background-color: var(--cor-primaria);
+    width: 100%;
+    height: 3px;
+}
+
+.msg_inicial {
+    display: flex;
+    padding: 1vw 6vw;
+    gap: 5vw;
+    align-items: center;
+}
+
+.alinhamento__info_texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.alinhamento__info_texto h1 {
+    font-family: var(--fonte-titulos);
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--cor-terciaria);
+    margin: 0;
+}
+
+.alinhamento__info_texto p {
+    font-family: var(--fonte-corpo);
+}
+
+#img_amigas_trocando_presentes {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+#btn_intro_atalho {
+    background-color: var(--cor-primaria);
+    color: var(--cor-fonte-clara);
+    font-family: var(--fonte-corpo);
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 1vw 2vw;
+    filter: drop-shadow(4px 4px 0px rgb(0, 0, 0, 1));
+    margin-top: 2vw;
+    transition: transform 0.1s ease-in-out, filter 0.1s ease-in-out;
+}
+
+#btn_intro_atalho:hover .icon_presente {
+    display: inline-block;
+    animation: chacoalhar 0.4s ease-in-out 3;
+}
+
+@keyframes chacoalhar {
+    0% { transform: rotate(0); }
+    20% { transform: rotate(-10deg); }
+    40% { transform: rotate(10deg); transform: translateY(-4px)}
+    60% { transform: rotate(-6deg); }
+    80% { transform: rotate(6deg); }
+    100% { transform: rotate(0); }
+}
+
+.sorteador__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sorteador__main strong {
+    padding: 4vw;
+    width: 60%;
+    text-align: center;
+    font-family: var(--fonte-corpo);
+}
+
+.alinhamento__input {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#inputNome {
+    width: 80%;
+    padding: 1vw;
+    background-color: var(--cor-fonte-clara);
+    color: var(--cor-placeholder);
+    font-family: var(--fonte-placeholder);
+    border-radius: 3px;
+    filter: drop-shadow(4px 4px rgb(0, 0, 0, 1));
+    border: 2px solid black;
+    transition: transform 0.1s ease-in-out, filter 0.1s ease-in-out;    
+}
+
+#addNome, #sortearNome {
+    background-color: var(--cor-primaria);
+    color: var(--cor-fonte-clara);
+    font-family: var(--fonte-corpo);
+    border-radius: 4px;
+    padding: 1vw 3vw;
+    font-weight: 600;
+    font-size: 14px;
+    filter: drop-shadow(4px 4px 0px rgb(0, 0, 0, 1));
+    transition: transform 0.1s ease-in-out, filter 0.1s ease-in-out;    
+}
+
+.alinhamento__nomes {
+    padding: 3vw;
+}
+
+#listaNomes {
+    display: flex;
+    gap: 2vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.nome-item {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-fonte-escura);
+    padding: 0.5vw 1vw;
+    border-radius: 3px;
+    font-size: larger;
+    font-family: var(--fonte-corpo);
+}
+
+#nomeSorteado {
+    margin: 1vw 0 5vw 0;
+    font-size: 2rem;
+    font-family: var(--fonte-titulos);
+    font-weight: 400;
+    color: var(--cor-terciaria);
+}
+
+.sorteador__main h1 {
+    padding: 2vw;
+    color: var(--cor-fonte-escura);
+    font-family: var(--fonte-corpo);
+}
+
+#btn_intro_atalho:active, #addNome:active, #sortearNome:active, #inputNome:active {
+    transform: scale(0.9);
+    filter: drop-shadow(2px 2px 0px rgb(0, 0, 0, 1));
+}
+
+footer {
+    padding: 3vw;
+    background-color: var(--cor-primaria);
+    color: var(--cor-fonte-clara);
+    font-family: var(--fonte-corpo);
+}
+
+.linksRedes {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.linksRedes a {
+    color: var(--cor-fonte-clara);
+    font-family: var(--fonte-corpo);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+@media (max-width: 768px) {
+    header, main {
+        padding: 4vw;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #img_logo_Oracle {
+        width: 30%;
+    }
+
+    .msg_inicial {
+        flex-direction: column;
+        text-align: center;
+        gap: 3vw;
+    }
+
+    .alinhamento__info_texto h1 {
+        font-size: 1.5rem;
+    }
+
+    .alinhamento__info_img img {
+        width: 80%;
+        height: auto;
+    }
+
+    .sorteador__main strong {
+        width: 90%;
+    }
+
+    .alinhamento__input {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #inputNome {
+        width: 97%;
+    }
+
+    #addNome, #sortearNome {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header, main {
+        padding: 3vw;
+    }
+
+    #img_logo_Oracle {
+        width: 30%;
+    }
+
+    .msg_inicial {
+        gap: 2vw;
+    }
+
+    .alinhamento__info_texto h1 {
+        font-size: 1.3rem;
+    }
+
+    .alinhamento__info_img img {
+        width: 90%;
+    }
+
+    .sorteador__main strong {
+        width: 100%;
+    }
+
+    #inputNome {
+        width: 97%;
+    }
+
+    #addNome, #sortearNome {
+        width: 100%;
+    }
+
+    .linksRedes a {
+        font-size: 0.9rem;
+    }
+}

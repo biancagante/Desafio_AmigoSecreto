@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img id="img_logo_Oracle" src="img/Oracle_logo.png" alt="Logo da Oracle,, um empresa de tecnologia, com letras em vermelho">
+            <a href="">Oracle One Next Education</a>
+            <a href="">Objetivo do Challenge</a>
+            <a href="">Me conheça</a>
+        </nav>
+        <canvas class="linha__divisoria"></canvas>
+    </header>
+    <main>
+        <section class="msg_inicial">
+            <div class="alinhamento__info_texto">
+                <h1>Sorteador de Amigo Secreto</h1>
+                <p>
+                    Pronto para tornar sua próxima troca de presentes fácil e divertida? Esse projeto ajuda você a organizar o seu amigo secreto sorteando nomes aleatoriamente, garantindo que todos recebam uma surpresa — sem a complicação de adivinhar quem está comprando para quem!
+                </p>
+                <a href="#inputNome">
+                    <button id="btn_intro_atalho">
+                        Vamos começar e levar alegria a todos!
+                        <span class="icon_presente">🎁</span>
+                    </button>
+                </a>
+            </div>
+            <div class="alinhamento__info_img">
+                <img id="img_amigas_trocando_presentes" src="https://as2.ftcdn.net/v2/jpg/06/53/30/39/1000_F_653303905_35P5MEEcZj3VECU3uXXnscR2Ga0b8nrZ.jpg" alt="Uma mulher negra de camiseta amarela, segurando um presente de embalagem rosa, abraçando outra menina de cabelo liso, camiseta branca e jardineira verde.">
+            </div>
+        </section>
+        <section class="sorteador__main">
+            <strong>
+                Basta inserir os nomes dos seus amigos, e nós fazemos o resto. Sem mais confusão, sem mais equívocos — apenas bons momentos e ótimos presentes.
+            </strong>
+            <div class="alinhamento__input">
+                <input id="inputNome" type="text" placeholder="Insira o nome do seu amigo aqui">
+                <button id="addNome" onclick="adicionarNomes()">Adicionar</button>
+            </div>
+            <div class="alinhamento__nomes">
+                <div id="listaNomes"></div>
+            </div>
+            <button id="sortearNome" onclick="sortearAmigoSecreto()">Sortear</button>
+            <h1>O nome sorteado foi:</h1>
+            <div id="nomeSorteado"></div>
+        </section>
+    </main>
+    <footer>
+        <h3>Links</h3>
+        <section class="linksRedes">
+            <a href="https://www.linkedin.com/in/bianca-agante-tiene" target="_blank"><img src="img/linkedin.png" width="30px" alt="Logo do aplicativo linkedin, com fundo azul e as letras in na cor branca">Linkedin - bianca-agante-tiene</a>
+            <a href="https://github.com/biancagante" target="_blank"><img src="img/github.png" width="30px" alt="Logo do Github, com fundo preto e decalque do mascote, que possui a cabeça redonda com orelhas de gato e um rabo">GitHub - biancagante</a>        
+        </section>
+    </footer>
+</body>
+</html>
