@@ -2,7 +2,7 @@
 
 Bem-vindo(a) ao **Sorteador de Amigo Secreto**! Este projeto foi desenvolvido como parte do desafio proposto pela **Oracle One Next Education**. Com ele, você pode organizar sua brincadeira de amigo secreto de maneira simples e divertida, sem precisar recorrer a papéis ou aplicativos complicados. Basta inserir os nomes dos participantes, e o sorteador cuidará do resto! 🎉
 
-**Visite em: **[**Amigo Secreto Site**](https://biancagante.github.io/Desafio_AmigoSecreto/)
+**Visite em:** [**Amigo Secreto Site**](https://biancagante.github.io/Desafio_AmigoSecreto/)
 ---
 
 ## 🛠 Tecnologias Utilizadas
